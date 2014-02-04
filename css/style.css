@@ -37,6 +37,11 @@ a:active {
 	color: ;
 }
 
+input {
+	border: 1px solid #DDD;
+	padding: 1px 5px;
+}
+
 .wrapper {
 	position: absolute;
 	top : 0px;
@@ -57,6 +62,11 @@ a:active {
     left: 50%;
     margin-left: -171px;
 	margin-top: 30px;
+}
+
+.button {
+	background-color: #EEE;
+	border-radius: 2px;
 }
 
 #nav_header {
@@ -145,7 +155,7 @@ a:active {
 /* Registration Dialog */
 #registration .registration_form {
 	padding: 20px;
-	background-color: #fff4d0;
+	background-color: #fffdd0;
 }
 
 #registration fieldset {
@@ -163,17 +173,17 @@ a:active {
 }
 
 #registration #firstname, #registration #lastname {
-	width: 132px;
+	width: 124px;
 }
 
 #registration #password, #registration #password_repetition, 
 #registration #street,  #registration #telephone, 
 #registration #email {
-	width: 272px;
+	width: 266px;
  }
  
 #registration #zipcode,  #registration #city {
-	width: 132px;
+	width: 125px;
  }
  
 #registration .button {
