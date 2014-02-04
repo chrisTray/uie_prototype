@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>APli - Anweisungs- und Planungsinterface</title>
+		<link href="style_request.css" type="text/css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<header>
+				<nav>
+				</nav>
+			</header>
+			
+			<section>
+				<form action="#" method="post">
+					<article>
+						<h2>WAS</h2>
+						<table>
+							<tbody>
+								<tr>
+									<td><label for="title">Titel</label></td>
+									<td><input type="text" name="title" id="title"></td>
+								<tr>
+								<tr>
+									<td><label for="description">Beschreibung</label></td>
+									<td><input type="textarea" name="description" id="description"></td>
+								<tr>
+							</tbody>
+						</table>
+						<label for="request_resources">Hilfskräfte &amp; Ressourcen</label>
+						<table>
+							<tbody>
+								<tr>
+									<td>
+										<input type="checkbox" id="resource_helper" value="Helfer"/>
+										<label for="resource_helper">Helfer</label>
+									</td>								
+									<td><label for="resource_helper_count">Anzahl:</label></td>
+									<td><input type="text" name="resource_helper_count" id="resource_helper_count"></td>
+								<tr>
+								<tr>
+									<td>
+										<input type="checkbox" id="resource_shovel" value="Schaufeln"/>
+										<label for="resource_shovel">Schaufeln</label>
+									</td>
+									<td><label for="resource_shovel_count">Anzahl:</label></td>
+									<td><input type="text" name="resource_shovel_count" id="resource_shovel_count"></td>
+								<tr>
+								<tr>
+									<td>
+										<input type="checkbox" id="resource_sandbag" value="Sandsäcke"/>
+										<label for="resource_sandbag">Sands&auml;cke</label>
+									</td>
+									<td><label for="resource_sandbag_count">Anzahl:</label></td>
+									<td><input type="text" name="resource_sandbag_count" id="resource_sandbag_count"></td>
+								<tr>
+								<tr>
+									<td>
+										<input type="checkbox" id="resource_others" value="Sonstige"/>
+										<input type="text" name="resource_sandbag_count" id="resource_sandbag_count" placeholder="Sonstige"></td>
+									</td>
+									<td><label for="resource_others_count">Anzahl:</label></td>
+									<td><input type="text" name="resource_others_count" id="resource_others_count"></td>
+								<tr>
+							</tbody>
+						</table>
+					</article>
+					<article>
+						<h2>WO</h2>
+						<div class="streetview">
+							<table>
+								<tbody>
+									<tr>
+										<td><label for="contact_title">Anrede</label></td>
+										<td><select name="contact_title" id="contact_title">
+											<option value="Herr">Herr</option>
+											<option value="Frau">Frau</option>
+										</select></td>
+									</tr>
+									<tr>
+										<td><label for="contact_firstname">Vorname</label></td>
+										<td><input type="text" name="contact_firstname" id="contact_firstname"></td>
+									</tr>
+									<tr>
+										<td><label for="contact_lastname">Nachname</label></td>
+										<td><input type="text" name="contact_lastname" id="contact_lastname"></td>
+									</tr>
+									<tr>
+										<td><label for="contact_street">Stra&szlig;e</label></td>
+										<td><input type="text" name="contact_street" id="contact_street"></td>
+									</tr>
+									<tr>
+										<td><label for="contact_zipcode">PLZ</label></td>
+										<td><input type="text" name="contact_zipcode" id="contact_zipcode"></td>
+									</tr>
+									<tr>
+										<td><label for="contact_city">Ort</label></td>
+										<td><input type="text" name="contact_city" id="contact_city"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="mapview">
+							
+						</div>
+					</article>
+					<article>
+						<h2>WANN</h2>
+						<table>
+							<tbody>
+								<tr>
+									<td>
+										<input type="radio" id="time_immediately" name="time" value="Sofort" checked>
+										<label for="time_immediately">Sofort</label>
+									</td>							
+								</tr>
+								<tr>
+									<td>
+										<input type="radio" id="time_stamp" name="time" value="Sp&auml;terer Zeitpunkt">
+										<label for="time_stamp">Sp&auml;terer Zeitpunkt</label>
+									</td>
+									<td>
+										<label for="time_start">Von</label>
+										<input type="datetime" id="time_start" name="time_start"/>	
+									</td>									
+								</tr>
+							</tbody>
+						</table>
+					</article>
+					<p class="submit">
+						<input type="submit" name="submit" id="submit" value="Anfrage erstellen">
+					</p>
+				</form>
+			</section>
+		</div>
+	</body>
+</html>

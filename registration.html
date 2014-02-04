@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>HAPI - Hochwasser Anweisungs- und Plannungsinterface</title>
+		<meta name="description" content="Innerhalb der Übung des Modules UIE, soll eine einfache Dateiverwaltung, namens Inf-Box, erstellt werden. ">
+		<meta name="author" content="Hannes Seibt">
+		<meta name="author" content="David Stolze">
+		<meta name="author" content="Christoph Träger">
+		<meta name="author" content="Vlad Vranceanu">
+		
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+	</head>
+	<body id="registration">
+		<header id="nav_header">
+			<nav class="wrapper">	
+				<div id="nav_title">
+					<a href="#">HAPI - Hochwasser Anweisungs- und Plannungsinterface</a>
+				</div>
+			</nav>
+		</header>
+
+		<div id="main_div" class="dialog_wrapper">
+			<h1>Registrieren</h1>
+			<form class="registration_form" action="#" method="post">
+				<fieldset>
+					<legend><strong>Name</strong></legend>
+					<div class="new_line">
+						<select name="contact_title" id="contact_title">
+							<option value="Herr">Herr</option>
+							<option value="Frau">Frau</option>
+						</select>
+					</div>
+					<input type="text" placeholder=" Vorname" name="firstname" id="firstname">
+					<input type="text" placeholder=" Nachname" name="lastname" id="lastname">
+				</fieldset>
+				
+				<fieldset>
+					<legend><strong>Passwort</strong></legend>
+					<input type="text" name="password" id="password">
+				</fieldset>
+				<fieldset>
+					<legend><strong>Passwort wiederholen</strong></legend>
+					<input type="text" name="password_repetition" id="password_repetition">
+				</fieldset>
+				
+				
+				<fieldset>
+					<legend><strong>Stra&szlig;e</strong></legend>
+					<input type="text" placeholder=" Stra&szlig;e" name="street" id="street">
+					<input type="text" placeholder=" PLZ" name="zipcode" id="zipcode">
+					<input type="text" placeholder=" Ort" name="city" id="city">
+				</fieldset>
+				
+				<fieldset>
+					<legend><strong>Telefon</strong></legend>
+					<input type="text" name="telephone" id="telephone">
+				</fieldset>
+				<fieldset>
+					<legend><strong>Email</strong></legend>
+					<input type="text" name="email" id="email">
+				</fieldset>
+				
+				<input class="button" type="reset" value=" Abbrechen">
+				<input id="submit" class="button" type="submit" value="Anfrage erstellen"/>					
+			</form>
+		</div>
+	</body>
+</html>
